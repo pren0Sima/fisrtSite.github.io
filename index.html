@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href = "stilizacii/reset.css" rel = "stylesheet">
+    <link href = "stilizacii/styles.css" rel = "stylesheet">
+    <script src="js/slider.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital@0;1&family=Montserrat&family=Playfair+Display+SC:ital@0;1&family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Рецепти - начална страница</title>
+</head>
+<body>
+    <header class = "menu">
+        <div class = "logo">
+            <a class = "logo-link-to-first-page" href = "index.html">
+                <img src = "snimkiZaFinalenProekt/tigan.svg" alt = "tigan">
+            </a>
+        </div>
+        <h1>Любимите рецепти на Симона</h1>
+        <a class = "contact" href = "contact.html">Контакт</a>
+    </header>
+    <div class = "middle-part">
+        <aside class = "sidebar">
+            <h2>Рецепти за:</h2>
+            <ul>
+                <li>
+                    <a class = "soup" href = "soup.html">Супа</a>
+                </li>
+                <li>
+                    <a class = "main-course" href = "mainCourse.html">Основно ястие</a>
+                </li>
+                <li>
+                    <a class = "dessert" href = "dessert.html">Десерт</a>
+                </li>
+            </ul>
+        </aside>
+        <div class = "content">
+            <p>В този сайт споделям някои от любимите си рецепти.</p>
+        </div>
+        <div class = "for-me">
+            <h2>И малко за мен:</h2>
+            <p>Аз съм Симона и готвенето е едно от хобитата ми. Ако не ми потръгне като програмист, ще стана готвач.</p>
+        </div>
+    </div>
+    <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">«</button>
+        <button class="carousel-button next" data-carousel-button="next">»</button>
+        <ul data-slides>            
+            <li class="slide" data-active>
+                <img src="snimkiZaFinalenProekt/black-and-white/cooking-cool-kitchen-svgrepo-com.svg" alt="хладилник">
+            </li>
+            <li class="slide">
+                <img src="snimkiZaFinalenProekt/black-and-white/workingwasp.svg" alt="готвеща оса">
+            </li>
+            <li class="slide">
+                <img src="snimkiZaFinalenProekt/soup/pot-of-food-svgrepo-com.svg" alt="готово ястие">
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

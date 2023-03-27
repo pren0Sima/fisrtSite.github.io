@@ -1,0 +1,99 @@
+/*за contact.html*/
+:root {
+    --primary: blanchedalmond;
+    --accent: #952618;
+}
+* {
+    font-family: 'Cormorant Infant', serif;
+}
+body {
+    background-color: var(--primary);
+    color: var(--accent);
+    font-weight: bold;
+    font-family: 'Playfair Display SC', serif;
+    font-size: x-large;
+    height: 100vh;
+    width: 100%;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.contact-box {
+    max-width: 850px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 50px 15px rgba(92, 49, 20, 0.19);
+}
+.left {
+    border-radius: 15px 0px 0px 15px;
+    height: 100%;
+    background-size: cover;
+}
+.soup {
+    max-width: 450px;
+}
+.right {
+    padding: 25px 40px;
+}
+h2 {
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+}
+.field {
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(207, 153, 123, 0.6);
+    margin-bottom: 22px;
+}
+.field:hover, .btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+textarea {
+    min-height: 150px;
+}
+.btn, .field {
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    outline: none;
+    transition: 0.3s;
+}
+.btn {
+    color: #fff;
+    background-color: var(--accent);
+    border: none;
+    cursor: pointer;
+}
+.field:focus {
+    border: 2px solid var(--accent);
+    background-color: white;
+}
+@media screen and (max-width: 880px) {
+    .left {
+        display: none;
+    }
+    .contact-box {
+        grid-template-columns: none;
+    }
+    textarea {
+        width: 90%;
+    }
+    
+}
